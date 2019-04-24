@@ -90,7 +90,7 @@ public class CookieManagerModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void flush() {
-        if (Android.os.Build.VERSION.SDK_INT >= 21) {
+        if (android.os.Build.VERSION.SDK_INT >= 21) {
             CookieManager.getInstance().flush();
         }
     }
